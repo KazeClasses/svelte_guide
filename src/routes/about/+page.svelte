@@ -10,7 +10,7 @@
   
 <input bind:value={name} placeholder="Enter your name" />
 {#if name === 'world'}
-  <h1>Hello {name}!</h1>
+  <h1 class="text-4xl text-blue-500 text-center">Hello {name}!</h1>
 {:else}
   <h1>I don't say hello to anyone else</h1>
 {/if}
