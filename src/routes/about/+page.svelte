@@ -1,2 +1,5 @@
-<h1>About page</h1>
-<p>This is the about page</p>
+<script>
+    let name = $state('world');
+</script>
+<h1>Hello {name}!</h1>
+

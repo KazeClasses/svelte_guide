@@ -1,14 +1,15 @@
 <script>
 	import { scaleLinear } from 'd3-scale';
 
-	const points = [
+
+	let points = $state([
 		{ year: 1990, birthrate: 16.7 },
 		{ year: 1995, birthrate: 14.6 },
-		{ year: 2000, birthrate: 14.4 },
+		{ year: 2000, birthrate: 14.4},
 		{ year: 2005, birthrate: 14 },
 		{ year: 2010, birthrate: 13 },
 		{ year: 2015, birthrate: 12.4 }
-	];
+	]);
 
 	const xTicks = [1990, 1995, 2000, 2005, 2010, 2015];
 	const yTicks = [0, 5, 10, 15, 20];
@@ -69,6 +70,7 @@
 	</svg>
 </div>
 
+<input type="number" bind:value={points[2].birthrate}>
 
 <style>
 	h2 {
